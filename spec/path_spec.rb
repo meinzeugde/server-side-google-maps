@@ -97,7 +97,7 @@ module ServerSideGoogleMaps
         interpolated = path.interpolate(8)
         interpolated.points.length.should == 8
         interpolated.points[0].should == p1
-        interpolated.points[6].latitude.to_s.should == '6.9936056564358' # too many decimals...
+        interpolated.points[6].latitude.to_s.should == '6.993605656435804' # too many decimals...
         interpolated.points[6].longitude.should == 2.0
         interpolated.points[6].distance_along_path.should == 666039
         interpolated.points[7].should == p3
@@ -111,7 +111,7 @@ module ServerSideGoogleMaps
         path = Path.new([p1, p2, p2_2, p3])
         interpolated = path.interpolate(8)
         interpolated.points[0].should == p1
-        interpolated.points[6].latitude.to_s.should == '6.9936056564358' # too many decimals...
+        interpolated.points[6].latitude.to_s.should == '6.993605656435804' # too many decimals...
         interpolated.points[6].longitude.should == 2.0
         interpolated.points[6].distance_along_path.should == 666039
         interpolated.points[7].should == p3

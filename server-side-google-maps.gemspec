@@ -15,6 +15,8 @@ Gem::Specification.new do |s|
   s.add_dependency('httparty')
   s.add_dependency('nayutaya-googlemaps-polyline', '0.0.1')
 
+  s.add_development_dependency 'json', '1.8.1'
+
   s.rubyforge_project = "server-side-google-maps"
 
   s.files         = `git ls-files`.split("\n")
